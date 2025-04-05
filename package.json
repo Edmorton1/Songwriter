@@ -7,7 +7,7 @@
     "start": "webpack serve --env mode=development port=5000",
     "start:railway": "npm run build && ts-node -r tsconfig-paths/register client.ts",
     "dev": "nodemon -r tsconfig-paths/register server/index.ts",
-    "dev:railway": "ts-node server/index.ts",
+    "dev:railway": "ts-node -r tsconfig-paths/register server/index.ts",
     "typecheck": "tsc"
   },
   "author": "",
