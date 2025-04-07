@@ -51,10 +51,13 @@
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
+    "mobx": "^6.13.7",
+    "mobx-react-lite": "^4.1.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-error-boundary": "^5.0.0",
     "react-router-dom": "^7.2.0",
+    "tone": "^15.0.4",
     "tsconfig-paths": "^4.2.0"
   }
 }

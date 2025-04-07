@@ -1,0 +1,14 @@
+.canvas {
+  // border: 3px solid black;
+  position: absolute;
+  margin: 40px;
+  background: transparent;
+  z-index: 1;
+}
+
+.canvasBackground {
+  // border: 3px solid black;
+  margin: 40px;
+  position: absolute;
+  background-image: url("@/assets/Texturelabs_Wood_189S.jpg");
+}

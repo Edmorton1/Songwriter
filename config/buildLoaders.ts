@@ -21,6 +21,10 @@ function buildLoaders(options: BuildOptions): ModuleOptions["rules"] {
       type: 'asset/resource',
     },
     {
+      test: /\.(wav|mp3|ogg)$/i,
+      type: 'asset/resource',
+    },
+    {
       test: /\.svg$/i,
       issuer: /\.[jt]sx?$/,
       use: ['@svgr/webpack'],

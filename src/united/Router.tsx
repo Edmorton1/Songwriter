@@ -1,19 +1,20 @@
 import { BrowserRouter, Routes, Route } from "react-router";
-import { LazyMain } from "@/components/index.lazy";
+import { LazyMain } from "@/united/index.lazy";
 import { ErrorBoundary } from "react-error-boundary";
-import Fallback from "@/Fallback";
+import Fallback from "@/united/Fallback";
+import "@/css/App.scss"
 // ДЛЯ АССИНХРОННЫХ ОПЕРАЦИЙ ИСПОЛЬЗОВАТЬ suspense
 
-function App() {
+function Router() {
   return (
-    <ErrorBoundary FallbackComponent={Fallback}>
+    // <ErrorBoundary FallbackComponent={Fallback}>
         <BrowserRouter>
             <Routes>
                 <Route index element={<LazyMain />} />
             </Routes>
         </BrowserRouter>
-    </ErrorBoundary>
+    // </ErrorBoundary>
   );
 }
 
-export default App;
+export default Router;

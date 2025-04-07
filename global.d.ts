@@ -2,6 +2,10 @@ declare module "*.module.scss" {
   const classes: { [key: string]: string };
   export = classes;
 }
+declare module "*.wav" {
+  const value: string;
+  export default value
+}
 declare module "*.png" {
   const value: string;
   export default value;
