@@ -56,15 +56,16 @@ function Canvas() {
     const string = findString(y)
     let note = getNote(lad, string)
 
-    console.log(note, x, y)
+    // console.log(note, x, y)
     otmetka(ctx, lad, string, note)
-    // startSound(note)
+    startSound(note)
   }
 
   return (
     <>
       <canvas onClick={(event) => handlerCanvas(event)} ref={canvas} className={styles.canvas} width={store.CANVAS_WIDTH_PX} height={store.CANVAS_HEIGHT_PX}></canvas>
       <canvas ref={canvasBack} className={styles.canvasBackground} width={store.CANVAS_WIDTH_PX} height={store.CANVAS_HEIGHT_PX}></canvas>
+      <div className={styles.canvasNumbers} style={{top: store.CANVAS_HEIGHT_PX, width: store.CANVAS_WIDTH_PX}}>asdasdasddsaasdasdadsasd</div>
       <div>Настройки управления</div>
       <button onClick={() => playChord()} >Воспроизвести аккорд</button>
       <button onClick={() => ctx.clearRect(0, 0, store.CANVAS_WIDTH, store.CANVAS_HEIGHT)}>Очистить</button>

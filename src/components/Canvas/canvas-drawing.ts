@@ -28,24 +28,27 @@ export function otmetka(ctx: CanvasRenderingContext2D, lad: number, string: numb
   }
 
   function drawCross() {
-    ctx.save();
+    if (prevNotes[string] != store.PLAYNOTES[string]) {
+      ctx.save();
 
-    ctx.translate(otstupHoriz, otstupVert);
-  
-    ctx.rotate(Math.PI / 4);
-  
-    ctx.beginPath();
-    ctx.moveTo(-store.RADIUS, 0);
-    ctx.lineTo(store.RADIUS, 0);
-  
-    ctx.moveTo(0, -store.RADIUS);
-    ctx.lineTo(0, store.RADIUS);
-  
-    ctx.strokeStyle = "red";
-    ctx.lineWidth = 10;
-    ctx.stroke();
-  
-    ctx.restore();
+      ctx.translate(otstupHoriz, otstupVert);
+    
+      ctx.rotate(Math.PI / 4);
+    
+      ctx.beginPath();
+      ctx.moveTo(-store.RADIUS, 0);
+      ctx.lineTo(store.RADIUS, 0);
+    
+      ctx.moveTo(0, -store.RADIUS);
+      ctx.lineTo(0, store.RADIUS);
+    
+      ctx.strokeStyle = "red";
+      ctx.lineWidth = 10;
+      ctx.stroke();
+    
+      ctx.restore();
+    }
+    else store.PLAYNOTES[string] = store.STANDART[string]
   }
 
   removeString()

@@ -11,7 +11,7 @@ class CanvasStore {
   CANVAS_HEIGHT = Number(this.CANVAS_HEIGHT_PX.slice(0, -2)) + 6
   CANVAS_WIDTH = Number(this.CANVAS_WIDTH_PX.slice(0, -2)) + 6
   
-  LADS = 13
+  LADS = 23
   STRINGS = 6 + 1
 
   RADIUS = 25
