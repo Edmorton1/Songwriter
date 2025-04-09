@@ -1,0 +1,49 @@
+        [
+          {
+            "string": 1,
+            "fret": 10
+          }
+        ],
+        [
+          {
+            "string": 1,
+            "fret": 9
+          }
+        ],
+        [
+          {
+            "string": 2,
+            "fret": 9
+          }
+        ], 
+        [
+          {
+            "string": 3,
+            "fret": 9
+          }
+        ]
+      ]
+    },
+    {
+      "bpm": 120,
+      "beat": [4, 4],
+      "beats": [
+        null,
+        [
+          {
+            "string": 3,
+            "fret": 9
+          }
+        ],
+        [
+          {
+            "string": 2,
+            "fret": 9
+          }
+        ], 
+        [
+          {
+            "string": 2,
+            "fret": 11
+          }
+        ]

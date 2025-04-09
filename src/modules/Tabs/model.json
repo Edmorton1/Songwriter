@@ -1,0 +1,50 @@
+{
+  "name": "Unchained",
+  "author": "Arseny St",
+  "user": "Lycoris Justise",
+  "tacts": [
+    {
+      "bpm": 120,
+      "beat": [4, 4],
+      "beats": [
+        [
+          {
+            "string": 3,
+            "fret": 10
+          },
+          {
+            "string": 4,
+            "fret": 7
+          }
+        ],
+        [
+          {
+            "string": 4,
+            "fret": 9
+          },
+          {
+            "string": 3,
+            "fret": 7
+          }
+        ],
+        [
+          {
+            "string": 3,
+            "fret": 9
+          },
+          {
+            "string": 3,
+            "fret": 10
+          }
+        ],
+        [
+          {
+            "string": 4,
+            "fret": 7
+          },
+          null
+        ]
+      ]
+    }
+  ]
+}

@@ -1,6 +1,17 @@
-/* div {
-    background-color: blue;
-} */
+:root {
+  --bg_color: #1E1E1E;
+  --fo_color: white;
+  --sportify-color: #1DB954;
+  --change-color: #FFAE00;
+  --delete-color: #E20000;
+  --gray-font-color: #ACACAC;
+  --modal_back: #282828;
+  --playlist_width: 345px;
+  --img-size: 30px;
+  --img-margin: calc(var(--img-size) + 15px);
+}
 body {
-    margin: 0px;
+  margin: 0px;
+  background-color: var(--bg_color);
+  color: var(--fo_color);
 }

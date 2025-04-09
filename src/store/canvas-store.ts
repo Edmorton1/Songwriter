@@ -12,9 +12,10 @@ class CanvasStore {
   CANVAS_WIDTH = Number(this.CANVAS_WIDTH_PX.slice(0, -2)) + 6
   
   LADS = 23
+  // LADS = 13
   STRINGS = 6 + 1
 
-  RADIUS = 25
+  RADIUS = 20
   
   PLAYNOTES = ['E4', 'B3', 'G3', 'D3', 'A2', 'E2']
   STANDART = ['E4', 'B3', 'G3', 'D3', 'A2', 'E2']

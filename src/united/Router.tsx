@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router";
-import { LazyMain } from "@/united/index.lazy";
+import { LazyMain, LazyTabs } from "@/united/index.lazy";
 import { ErrorBoundary } from "react-error-boundary";
 import Fallback from "@/united/Fallback";
 import "@/css/App.scss"
@@ -11,6 +11,7 @@ function Router() {
         <BrowserRouter>
             <Routes>
                 <Route index element={<LazyMain />} />
+                <Route path="/tabs" element={<LazyTabs />}></Route>
             </Routes>
         </BrowserRouter>
     // </ErrorBoundary>

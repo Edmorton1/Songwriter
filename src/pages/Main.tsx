@@ -1,4 +1,4 @@
-import Canvas from '@/components/Canvas/Canvas';
+import Canvas from '@/modules/Canvas/components/Canvas';
 import { useState, useRef } from 'react';
 import note from "@/assets/guitar-electric/A2.wav"
 import * as Tone from 'tone';
